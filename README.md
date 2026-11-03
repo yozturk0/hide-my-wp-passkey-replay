@@ -59,13 +59,6 @@ at `passkeyLogin()` time, and require `client['challenge']` to match it
 exactly in `validateAuthentication()`, consuming it on use. Change the
 counter check to `$counter <= $prev` reject (strictly increasing only).
 
-## Disclosure plan
-SUBMITTED to Patchstack 30 Oct 2026, **REJECTED within 1 minute**: "Out of
-scope due to not meeting the bug bounty rules and scope." Matches the
-form's own pre-submit warning exactly - "Bypass Vulnerability" is not an
-accepted type, and this plugin never showed an mVDP-scope badge (unlike
-wp-google-maps, which did). Real, live-PoC-confirmed bug, just not
-Patchstack-payable under the standard program with this type. No
-resubmission planned via Patchstack; could go to MITRE CNA-LR for a
-credit-only CVE like order-approval-woocommerce/drisko-plug if the owner
-wants it, but no bounty either way.
+## Status
+Reported to the vendor. CVE request filed with MITRE's CNA of Last Resort
+(CAN-2026-2041427, "CVE Request is Submitted"). Researcher: Yusuf Ozturk.
